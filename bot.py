@@ -32,7 +32,7 @@ load_dotenv()
 # ─── Logging ────────────────────────────────────────────────────────────────
 logging.basicConfig(
     format="%(asctime)s | %(levelname)s | %(name)s | %(message)s",
-    level=logging.getLogger().setLevel(logging.INFO),
+    level=logging.INFO, # Просто укажите уровень напрямую
 )
 logger = logging.getLogger(__name__)
 
