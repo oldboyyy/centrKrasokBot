@@ -10,6 +10,8 @@ from collections import defaultdict
 from dotenv import load_dotenv
 from telegram import Update
 from telegram.constants import ChatAction
+from keep_alive import keep_alive  
+
 from telegram.ext import (
     Application,
     CommandHandler,
@@ -23,6 +25,7 @@ from openai import OpenAI
 # Убедитесь, что файлы называются knowledge_base.py и search_engine.py
 from knowledge import SYSTEM_PROMPT
 from search import find_products
+keep_alive()
 
 load_dotenv()
 
